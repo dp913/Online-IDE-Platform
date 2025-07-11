@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Execution Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Code Execution Service</h1>
+        <label for="codeInput">Select Language:</label>
+        <select id="languageSelect">
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+        <textarea id="codeInput" placeholder="Enter code here..." spellcheck="false"></textarea>
+        <button onclick="executeCode()">Execute Code</button>
+        <div class="output-container">
+            <h3>Output:</h3>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
